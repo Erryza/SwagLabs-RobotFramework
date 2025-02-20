@@ -43,11 +43,12 @@ Logout Account Test
     Validate the URL    https://www.saucedemo.com/
     Close Browser
     [Teardown]
-    
+
 Login With Multiple Credentials
     ${credentials}=    Read JSON File    ${CREDENTIALS_FILE}
     
     FOR    ${user}    IN    @{credentials['users']}
+        ${name}=     Get From Dictionary    ${user}    name
         ${username}=    Get From Dictionary    ${user}    username
         ${password}=    Get From Dictionary    ${user}    password
         ${expected_msg}=    Get From Dictionary    ${user}    expected_message
@@ -57,8 +58,8 @@ Login With Multiple Credentials
         Enter Username    ${username}
         Enter Password    ${password}
         Click Login Button
-        Run Keyword If    '${user["name"]}' == "Verify login with a valid username & password"    Verify Success Message    ${expected_msg}
-        Run Keyword If    '${user["name"]}' != "Verify login with a valid username & password"    Verify Error Message    ${expected_msg}
+        Run Keyword If    '${name}' == "Verify login with a valid username & password"    Verify Success Message    ${expected_msg}
+        Run Keyword If    '${name}' != "Verify login with a valid username & password"    Verify Error Message    ${expected_msg}
         Sleep    1s
         Close Browser
     END
