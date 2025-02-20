@@ -1,0 +1,46 @@
+{
+    "users": [
+        {
+            "name": "Verify login with an empty username & password",
+            "username": "",
+            "password": "",
+            "expected_message": "Epic sadface: Username is required"
+        },
+        {
+            "name": "Verify login with an empty username",
+            "username": "",
+            "password": "secret_sauce",
+            "expected_message": "Epic sadface: Username is required"
+        },
+        {
+            "name": "Verify login with an empty password",
+            "username": "standard_user",
+            "password": "",
+            "expected_message": "Epic sadface: Password is required"
+        },
+        {
+            "name": "Verify login with an invalid username",
+            "username": "locked_out_user",
+            "password": "secret_sauce",
+            "expected_message": "Epic sadface: Sorry, this user has been locked out."
+        },
+        {
+            "name": "Verify login with an invalid password",
+            "username": "standard_user",
+            "password": "secret_sauce1",
+            "expected_message": "Epic sadface: Username and password do not match any user in this service"
+        },
+        {
+            "name": "Verify login with an invalid username & password",
+            "username": "locked_out_user",
+            "password": "secret_sauce1",
+            "expected_message": "Epic sadface: Username and password do not match any user in this service"
+        },
+        {
+            "name": "Verify login with a valid username & password",
+            "username": "standard_user",
+            "password": "secret_sauce",
+            "expected_message": "Products"
+        }
+    ]
+}
