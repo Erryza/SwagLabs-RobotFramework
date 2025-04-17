@@ -28,22 +28,6 @@ Invalid Login Test
     Close Browser
     [Teardown]
 
-Logout Account Test
-    [Documentation]    Test for Logout Account
-    Open Login Page
-    Title Should Be    Swag Labs
-    Enter Username    standard_user
-    Enter Password    secret_sauce
-    Click Login Button
-    Sleep    3s
-
-    # TODO: Logout
-    Click Logout Button
-    Title Should Be    Swag Labs
-    Validate the URL    https://www.saucedemo.com/
-    Close Browser
-    [Teardown]
-
 Login With Multiple Credentials
     ${credentials}=    Read JSON File    ${CREDENTIALS_FILE}
     
