@@ -38,6 +38,9 @@ Add Products To Cart
 Click Shopping Cart Button
     Click Element    ${ICON_CART}
 
+Click Remove Button
+    Click Element    ${REMOVE_PRODUCT}
+
 Click Checkout Button
     Click Button    ${CHECKOUT_BUTTON}
 

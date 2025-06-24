@@ -8,8 +8,13 @@ ${ERROR_MESSAGE}  xpath=/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[
 ${TITLE_MESSAGE}    xpath=//span[@class='title']
 
 # * Logout Elements
-${HAMBURGER_BUTTON}    xpath=//button[@id='react-burger-menu-btn']
 ${LOGOUT_BUTTON}    xpath=(//a[normalize-space()='Logout'])[1]
+
+# * Other Buttons
+${MENU_BUTTON}    xpath=//button[@id='react-burger-menu-btn']
+${CLOSE_BUTTON}    xpath=(//button[normalize-space()='Close Menu'])[1]
+
+
 
 
 

@@ -24,9 +24,15 @@ Click Login Button
     Click Button    ${LOGIN_BUTTON}
 
 Click Logout Button
-    Click Button    ${HAMBURGER_BUTTON}
+    Click Button    ${MENU_BUTTON}
     Sleep    1s
     Click Element    ${LOGOUT_BUTTON}
+
+Click Menu Button
+    Click Element    ${MENU_BUTTON}
+
+Click Close Button
+    Click Element    ${CLOSE_BUTTON}
 
 Validate the URL 
     [Arguments]    ${expected_url}
