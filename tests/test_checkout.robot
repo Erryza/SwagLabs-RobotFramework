@@ -6,7 +6,6 @@ Resource    ../page_objects/products_page/actions.robot
 Filtering All Products
     [Documentation]    Filtering All Products
     Open Login Page
-    Maximize Browser Window
     Enter Username    standard_user
     Enter Password    secret_sauce
     Click Login Button
@@ -20,7 +19,6 @@ Filtering All Products
 Validate Menu Button
     [Documentation]
     Open Login Page
-    Maximize Browser Window
     Enter Username    standard_user
     Enter Password    secret_sauce
     Click Login Button
@@ -36,7 +34,6 @@ Validate Menu Button
 Checkout the Products
     [Documentation]    Checkout the Products
     Open Login Page
-    Maximize Browser Window
     Enter Username    standard_user
     Enter Password    secret_sauce
     Click Login Button
@@ -59,7 +56,6 @@ Checkout the Products
 Delete the Products
     [Documentation]
     Open Login Page
-    Maximize Browser Window
     Enter Username    standard_user
     Enter Password    secret_sauce
     Click Login Button
